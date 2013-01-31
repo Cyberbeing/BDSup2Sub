@@ -100,8 +100,24 @@ class EditDialogView extends JDialog {
                 model.setMinHeight(405);
                 break;
             case HD_1080:
+            case HD_1920x1040:
+            case HD_1920x1038:
+            case HD_1920x864:
+            case HD_1920x817:
+            case HD_1920x816:
+            case HD_1920x800:
             case HD_1440x1080:
             case HD_720:
+            case HD_1280x692:
+            case HD_1280x688:
+            case HD_1280x576:
+            case HD_1280x545:
+            case HD_1280x544:
+            case HD_1280x536:
+            case HD_1280x534:
+            case HD_1280x533:
+            case HD_1280x528:
+            case SD_720x404:
             default:
                 model.setMinWidth(640);
                 model.setMinHeight(320);

@@ -104,7 +104,7 @@ public class CommandLineOptions {
         Option resolution = OptionBuilder
                 .withArgName("resolution")
                 .withLongOpt("resolution")
-                .withDescription("Set resolution to: keep, ntsc=480, pal=576, 720p=720, 1080p=1080, 1440x1080\nDefault: keep")
+                .withDescription("Set resolution to: keep, ntsc=480, pal=576, 720x404, 1280x528, 1280x533, 1280x534, 1280x536, 1280x544, 1280x545, 1280x576, 1280x688, 1280x692, 720p=720, 1920x800, 1920x816, 1920x817, 1920x864, 1920x1038, 1920x1040, 1080p=1080, 1440x1080\nDefault: keep")
                 .hasArg().create(RESOLUTION);
         options.addOption(resolution);
 
