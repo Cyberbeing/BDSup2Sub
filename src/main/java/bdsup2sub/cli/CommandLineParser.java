@@ -159,10 +159,42 @@ public class CommandLineParser {
                 resolution = Optional.of(Resolution.PAL);
             } else if (value.equalsIgnoreCase("ntsc") || value.equalsIgnoreCase("480")) {
                 resolution = Optional.of(Resolution.NTSC);
+            } else if (value.equalsIgnoreCase("720x404")) {
+                resolution = Optional.of(Resolution.SD_720x404);
+            } else if (value.equalsIgnoreCase("1280x528")) {
+                resolution = Optional.of(Resolution.HD_1280x528);
+            } else if (value.equalsIgnoreCase("1280x533")) {
+                resolution = Optional.of(Resolution.HD_1280x533);
+            } else if (value.equalsIgnoreCase("1280x534")) {
+                resolution = Optional.of(Resolution.HD_1280x534);
+            } else if (value.equalsIgnoreCase("1280x536")) {
+                resolution = Optional.of(Resolution.HD_1280x536);
+            } else if (value.equalsIgnoreCase("1280x544")) {
+                resolution = Optional.of(Resolution.HD_1280x544);
+            } else if (value.equalsIgnoreCase("1280x545")) {
+                resolution = Optional.of(Resolution.HD_1280x545);
+            } else if (value.equalsIgnoreCase("1280x576")) {
+                resolution = Optional.of(Resolution.HD_1280x576);
+            } else if (value.equalsIgnoreCase("1280x688")) {
+                resolution = Optional.of(Resolution.HD_1280x688);
+            } else if (value.equalsIgnoreCase("1280x692")) {
+                resolution = Optional.of(Resolution.HD_1280x692);
             } else if (value.equalsIgnoreCase("720p") || value.equalsIgnoreCase("720")) {
                 resolution = Optional.of(Resolution.HD_720);
             } else if (value.equalsIgnoreCase("1440x1080")) {
                 resolution = Optional.of(Resolution.HD_1440x1080);
+            } else if (value.equalsIgnoreCase("1920x800")) {
+                resolution = Optional.of(Resolution.HD_1920x800);
+            } else if (value.equalsIgnoreCase("1920x816")) {
+                resolution = Optional.of(Resolution.HD_1920x816);
+            } else if (value.equalsIgnoreCase("1920x817")) {
+                resolution = Optional.of(Resolution.HD_1920x817);
+            } else if (value.equalsIgnoreCase("1920x864")) {
+                resolution = Optional.of(Resolution.HD_1920x864);
+            } else if (value.equalsIgnoreCase("1920x1038")) {
+                resolution = Optional.of(Resolution.HD_1920x1038);
+            } else if (value.equalsIgnoreCase("1920x1040")) {
+                resolution = Optional.of(Resolution.HD_1920x1040);
             } else if (value.equalsIgnoreCase("1080p") || value.equalsIgnoreCase("1080")) {
                 resolution = Optional.of(Resolution.HD_1080);
             } else {

@@ -153,8 +153,24 @@ public class BDSup2Sub {
             switch(options.getResolution().get()) {
                 case PAL: configuration.setFpsTrg(Framerate.PAL.getValue()); break;
                 case NTSC: configuration.setFpsTrg(Framerate.NTSC.getValue()); break;
+                case SD_720x404: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1280x528: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1280x533: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1280x534: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1280x536: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1280x544: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1280x545: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1280x576: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1280x688: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1280x692: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
                 case HD_720: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
                 case HD_1440x1080: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1920x800: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1920x816: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1920x817: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1920x864: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1920x1038: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
+                case HD_1920x1040: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
                 case HD_1080: configuration.setFpsTrg(Framerate.FPS_23_976.getValue()); break;
             }
         }

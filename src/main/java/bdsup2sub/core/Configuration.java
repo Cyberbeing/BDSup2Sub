@@ -43,8 +43,8 @@ public final class Configuration {
     public static final double MIN_FREE_SCALE_FACTOR = 0.5;
     public static final double MAX_FREE_SCALE_FACTOR = 2.0;
     public static final double DEFAULT_SOURCE_FRAMERATE = Framerate.FPS_23_976.getValue();  //TODO: dumb default
-    public static final double DEFAULT_TARGET_FRAMERATE = Framerate.PAL.getValue(); //TODO: dumb default
-    public static final Resolution DEFAULT_TARGET_RESOLUTION = Resolution.PAL; //TODO: dumb default
+    public static final double DEFAULT_TARGET_FRAMERATE = Framerate.FPS_23_976.getValue(); //TODO: dumb default
+    public static final Resolution DEFAULT_TARGET_RESOLUTION = Resolution.HD_720; //TODO: dumb default
     public static final ForcedFlagState DEFAULT_FORCED_FLAG_STATE = ForcedFlagState.KEEP;
     public static final int DEFAULT_ALPHA_CROP_THRESHOLD = 14;
     public static final int DEFAULT_ALPHA_THRESHOLD = 80;
@@ -55,7 +55,7 @@ public final class Configuration {
     public static final int DEFAULT_CROP_LINE_COUNT = 0;
     //Two equal captions are merged of they are closer than 200ms (0.2*90000 = 18000)
     public static final int DEFAULT_MERGE_PTS_DIFF = 18000;
-    public static final OutputMode DEFAULT_OUTPUT_MODE = OutputMode.VOBSUB;
+    public static final OutputMode DEFAULT_OUTPUT_MODE = OutputMode.BDSUP;
 
     private boolean convertResolution = CONVERT_RESOLUTION_BY_DEFAULT;
     private boolean convertFPS = CONVERT_FRAMERATE_BY_DEFAULT;
@@ -235,7 +235,7 @@ public final class Configuration {
     }
 
     public ScalingFilter getScalingFilter() {
-        ScalingFilter defaultScalingFilter = ScalingFilter.BILINEAR;
+        ScalingFilter defaultScalingFilter = ScalingFilter.LANCZOS3;
         try {
             return ScalingFilter.valueOf(props.get("filter", defaultScalingFilter.name()));
         } catch (IllegalArgumentException ex) {
@@ -251,7 +251,7 @@ public final class Configuration {
      * Get palette creation mode.
      */
     public PaletteMode getPaletteMode() {
-        PaletteMode defaultPaletteMode = PaletteMode.CREATE_NEW;
+        PaletteMode defaultPaletteMode = PaletteMode.CREATE_DITHERED;
         try {
             return PaletteMode.valueOf(props.get("paletteMode", defaultPaletteMode.name()));
         } catch (IllegalArgumentException ex) {

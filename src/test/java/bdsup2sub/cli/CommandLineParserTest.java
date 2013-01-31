@@ -171,6 +171,66 @@ public class CommandLineParserTest {
     }
 
     @Test
+    public void shouldParse720x404ResolutionArg() throws Exception {
+        subject.parse("--resolution", "720x404");
+        assertEquals(Resolution.SD_720x404, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1280x528ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1280x528");
+        assertEquals(Resolution.HD_1280x528, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1280x533ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1280x533");
+        assertEquals(Resolution.HD_1280x533, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1280x534ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1280x534");
+        assertEquals(Resolution.HD_1280x534, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1280x536ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1280x536");
+        assertEquals(Resolution.HD_1280x536, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1280x544ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1280x544");
+        assertEquals(Resolution.HD_1280x544, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1280x545ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1280x545");
+        assertEquals(Resolution.HD_1280x545, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1280x576ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1280x576");
+        assertEquals(Resolution.HD_1280x576, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1280x688ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1280x688");
+        assertEquals(Resolution.HD_1280x688, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1280x692ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1280x692");
+        assertEquals(Resolution.HD_1280x692, subject.getResolution().get());
+    }
+
+    @Test
     public void shouldParse720ResolutionArg() throws Exception {
         subject.parse("--resolution", "720");
         assertEquals(Resolution.HD_720, subject.getResolution().get());
@@ -180,6 +240,42 @@ public class CommandLineParserTest {
     public void shouldParse720pResolutionArg() throws Exception {
         subject.parse("--resolution", "720p");
         assertEquals(Resolution.HD_720, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1920x800ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1920x800");
+        assertEquals(Resolution.HD_1920x800, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1920x816ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1920x816");
+        assertEquals(Resolution.HD_1920x816, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1920x817ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1920x817");
+        assertEquals(Resolution.HD_1920x817, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1920x864ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1920x864");
+        assertEquals(Resolution.HD_1920x864, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1920x1038ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1920x1038");
+        assertEquals(Resolution.HD_1920x1038, subject.getResolution().get());
+    }
+
+    @Test
+    public void shouldParse1920x1040ResolutionArg() throws Exception {
+        subject.parse("--resolution", "1920x1040");
+        assertEquals(Resolution.HD_1920x1040, subject.getResolution().get());
     }
 
     @Test

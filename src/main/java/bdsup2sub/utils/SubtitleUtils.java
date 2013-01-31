@@ -120,10 +120,42 @@ public final class SubtitleUtils {
             return Resolution.NTSC;
         } else if (width <= Resolution.PAL.getDimensions()[0] && height <= Resolution.PAL.getDimensions()[1]) {
             return Resolution.PAL;
+        } else if (width <= Resolution.SD_720x404.getDimensions()[0] && height <= Resolution.SD_720x404.getDimensions()[1]) {
+            return Resolution.SD_720x404;
+        } else if (width <= Resolution.HD_1280x528.getDimensions()[0] && height <= Resolution.HD_1280x528.getDimensions()[1]) {
+            return Resolution.HD_1280x528;
+        } else if (width <= Resolution.HD_1280x533.getDimensions()[0] && height <= Resolution.HD_1280x533.getDimensions()[1]) {
+            return Resolution.HD_1280x533;
+        } else if (width <= Resolution.HD_1280x534.getDimensions()[0] && height <= Resolution.HD_1280x534.getDimensions()[1]) {
+            return Resolution.HD_1280x534;
+        } else if (width <= Resolution.HD_1280x536.getDimensions()[0] && height <= Resolution.HD_1280x536.getDimensions()[1]) {
+            return Resolution.HD_1280x536;
+        } else if (width <= Resolution.HD_1280x544.getDimensions()[0] && height <= Resolution.HD_1280x544.getDimensions()[1]) {
+            return Resolution.HD_1280x544;
+        } else if (width <= Resolution.HD_1280x545.getDimensions()[0] && height <= Resolution.HD_1280x545.getDimensions()[1]) {
+            return Resolution.HD_1280x545;
+        } else if (width <= Resolution.HD_1280x576.getDimensions()[0] && height <= Resolution.HD_1280x576.getDimensions()[1]) {
+            return Resolution.HD_1280x576;
+        } else if (width <= Resolution.HD_1280x688.getDimensions()[0] && height <= Resolution.HD_1280x688.getDimensions()[1]) {
+            return Resolution.HD_1280x688;
+        } else if (width <= Resolution.HD_1280x692.getDimensions()[0] && height <= Resolution.HD_1280x692.getDimensions()[1]) {
+            return Resolution.HD_1280x692;
         } else if (width <= Resolution.HD_720.getDimensions()[0] && height <= Resolution.HD_720.getDimensions()[1]) {
             return Resolution.HD_720;
         } else if (width <= Resolution.HD_1440x1080.getDimensions()[0] && height <= Resolution.HD_1440x1080.getDimensions()[1]) {
             return Resolution.HD_1440x1080;
+        } else if (width <= Resolution.HD_1920x800.getDimensions()[0] && height <= Resolution.HD_1920x800.getDimensions()[1]) {
+            return Resolution.HD_1920x800;
+        } else if (width <= Resolution.HD_1920x816.getDimensions()[0] && height <= Resolution.HD_1920x816.getDimensions()[1]) {
+            return Resolution.HD_1920x816;
+        } else if (width <= Resolution.HD_1920x817.getDimensions()[0] && height <= Resolution.HD_1920x817.getDimensions()[1]) {
+            return Resolution.HD_1920x817;
+        } else if (width <= Resolution.HD_1920x864.getDimensions()[0] && height <= Resolution.HD_1920x864.getDimensions()[1]) {
+            return Resolution.HD_1920x864;
+        } else if (width <= Resolution.HD_1920x1038.getDimensions()[0] && height <= Resolution.HD_1920x1038.getDimensions()[1]) {
+            return Resolution.HD_1920x1038;
+        } else if (width <= Resolution.HD_1920x1040.getDimensions()[0] && height <= Resolution.HD_1920x1040.getDimensions()[1]) {
+            return Resolution.HD_1920x1040;
         } else {
             return Resolution.HD_1080;
         }
